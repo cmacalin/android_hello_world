@@ -2,13 +2,23 @@
 
 node {
 	agent any
+	checkout scm
 
 	stages {
-		stage('Zip') {
-			steps {
-				echo 'Hello'
-			}
-
-		}
-	}
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
