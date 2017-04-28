@@ -1,5 +1,14 @@
 #!groovy
 
 node {
-	echo "Hellos World"
+	agent any
+
+	stages {
+		stage('Zip') {
+			steps {
+				echo 'Hello'
+			}
+
+		}
+	}
 }
