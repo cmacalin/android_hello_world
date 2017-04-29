@@ -1,7 +1,6 @@
 #!groovy
 
 node {
-	agent any
 	checkout scm
 
 	stages {
